@@ -1,43 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rubia M. Francesco</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rubia M. Francesco's Web and Computer Programming Certificate page.">
+  <meta name="author" content="Rubia Magdalena Francesco">
+  <title>Rubia M. Francesco - Course Homepage</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Rubia M. Francesco</h1>
-        <div class="hamburger" onclick="toggleMenu()">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-        <nav id="menu">
-            <a href="#">Home</a>
-            <a href="#">Chamber</a>
-            <a href="#">GitHub Profile</a>
-            <a href="#">LinkedIn</a>
-        </nav>
-    </header>
+  <header>
+    <div class="profile">
+      <img src="profile-picture.jpg" alt="Rubia M. Francesco" class="profile-img">
+      <h1>Rubia M. Francesco</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Chamber</a></li>
+        <li><a href="#">GitHub Profile</a></li>
+        <li><a href="#">LinkedIn</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-        <h2>Course Work</h2>
-        <p>Below are the courses available in the Web and Computer Programming Certificate:</p>
+  <main>
+    <section class="course-work">
+      <h2>Course Work</h2>
+      <ul>
+        <li>...</li>
+      </ul>
+    </section>
 
-        <div class="course-buttons">
-            <button onclick="filterCourses('all')">All</button>
-            <button onclick="filterCourses('WDD')">WDD</button>
-            <button onclick="filterCourses('CSE')">CSE</button>
-        </div>
+    <section class="image-section">
+      <h2>Toloria, Madagascar</h2>
+      <img src="baobab-trees.jpg" alt="Baobab Trees in Toloria, Madagascar">
+    </section>
 
-        <div class="courses" id="courseContainer"></div>
-    </main>
+    <section class="course-certificate">
+      <h2>Web and Computer Programming Certificate</h2>
+      <div class="filter-buttons">
+        <button>All</button>
+        <button>CSE</button>
+        <button>WDD</button>
+      </div>
+      <div class="course-list">
+        <button>CSE 110</button>
+        <button>WDD 130</button>
+        <button>CSE 111</button>
+        <button>CSE 210</button>
+        <button>WDD 131</button>
+        <button>WDD 231</button>
+      </div>
+    </section>
+  </main>
 
-    <footer>
-        <p>&copy; <span id="year"></span> Rubia Magdalena Francesco</p>
-        <p>Last Update: <span id="lastModified"></span></p>
-    </footer>
-
+  <footer>
+    <p>©2025 Rubia Magdalena Francesco | Madagascar</p>
+    <p>Last Update: 01/01/1970 12:00:00</p>
+    <img src="madagascar-flag.png" alt="Madagascar Flag" class="flag">
+  </footer>
 </body>
 </html>

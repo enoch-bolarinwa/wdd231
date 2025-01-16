@@ -54,6 +54,14 @@ body {
     max-width: 600px;
     border-radius: 8px;
   }
+ section.h2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #003366;
+    color: white;
+    padding: 1rem;
+  }
   
   .filter-buttons button,
   .course-list button {

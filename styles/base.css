@@ -1,101 +1,113 @@
-/* Global styles */
+/* Base styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-  }
-  
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #003366;
-    color: white;
-    padding: 1rem;
-  }
-  
-  .profile {
-    display: flex;
-    align-items: center;
-  }
-  
-  .profile-img {
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    margin-right: 1rem;
-  }
-  
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul li {
+  margin-left: 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
   nav ul {
-    display: flex;
-    list-style: none;
+      display: none;
+      flex-direction: column;
+      background-color: #333;
+      position: absolute;
+      top: 50px;
+      right: 10px;
+      width: 200px;
+      padding: 10px;
   }
-  
+
   nav ul li {
-    margin-right: 1rem;
+      margin: 10px 0;
   }
-  
+
   nav ul li a {
-    color: white;
-    text-decoration: none;
+      padding: 5px;
   }
-  
-  main {
-    padding: 1rem;
+
+  .hamburger {
+      display: block;
+      cursor: pointer;
   }
-  
-  section {
-    margin-bottom: 2rem;
+
+  .nav-active ul {
+      display: flex;
   }
-  
-  .image-section img {
-    width: 100%;
-    max-width: 600px;
-    border-radius: 8px;
+}
+
+.hamburger {
+  display: none;
+  font-size: 30px;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+      display: block;
   }
- section.h2{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #003366;
-    color: white;
-    padding: 1rem;
-  }
-  
-  .filter-buttons button,
-  .course-list button {
-    margin: 0.5rem;
-    padding: 0.5rem 1rem;
-    background: #663399;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  footer {
-    background: #003366;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-  }
-  
-  .flag {
-    width: 30px;
-    margin-top: 0.5rem;
-  }
-  
-  /* Responsive styles */
-  @media (max-width: 768px) {
-    header {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    nav ul {
-      flex-direction: column;
-      margin-top: 1rem;
-    }
-  }
-  
+}
+
+/* Course Cards */
+.course-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+}
+
+.course-card.completed {
+  background-color: #d3ffd3;
+}
+
+.course-card .course-title {
+  font-weight: bold;
+}
+
+.course-card .credits {
+  font-size: 14px;
+}
+
+/* Course Section */
+#certificate {
+  padding: 20px;
+}

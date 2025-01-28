@@ -1,0 +1,59 @@
+[
+    {
+      "name": "IDWeb",
+      "address": "2115 Vista Avenue Boise ID 83705",
+      "phone": "(208) 342-9936",
+      "website": "https://idweb.com",
+      "image": "idweb.jpg",
+      "membershipLevel": 1
+    },
+    {
+      "name": "Surge Web Design",
+      "address": "4872 E Arrow Creek Meridian ID 83646",
+      "phone": "(208) 555-1234",
+      "website": "https://surgewebdesign.com",
+      "image": "surge.jpg",
+      "membershipLevel": 2
+    },
+    {
+      "name": "GraphiCizen",
+      "address": "1782 Summerplace Court Meridian ID 83646",
+      "phone": "(208) 555-5678",
+      "website": "https://graphicizen.com",
+      "image": "graphicizen.jpg",
+      "membershipLevel": 3
+    },
+    {
+      "name": "Peppershock Media",
+      "address": "1225 2nd Street Nampa ID 83651",
+      "phone": "(208) 555-9012",
+      "website": "https://peppershock.com",
+      "image": "peppershock.jpg",
+      "membershipLevel": 1
+    },
+    {
+      "name": "Flash Tech Services",
+      "address": "Star Idaho 83669",
+      "phone": "(208) 555-3456",
+      "website": "https://flashtech.com",
+      "image": "flashtech.jpg",
+      "membershipLevel": 2
+    },
+    {
+      "name": "Motor Works",
+      "address": "1235 E Overland Road Meridian ID 83642",
+      "phone": "(208) 555-7890",
+      "website": "https://motorworks.com",
+      "image": "motorworks.jpg",
+      "membershipLevel": 3
+    },
+    {
+      "name": "Roaring Design",
+      "address": "1897 W Boise Avenue Boise ID 83706",
+      "phone": "(208) 555-4321",
+      "website": "https://roaringdesign.com",
+      "image": "roaring.jpg",
+      "membershipLevel": 1
+    }
+  ]
+  

@@ -4,7 +4,7 @@
       "address": "12 Balogun St, Lekki",
       "phone": "2349025551234",
       "website": "https://mariasboutique.com",
-      "image": "maria.jpg",
+      "image": "images/logo1.png",
       "membershipLevel": 2
     },
     {
@@ -12,7 +12,7 @@
       "address": "4 Ade Ave, Lekki",
       "phone": "2348068555678",
       "website": "https://tolaenterprises.com",
-      "image": "diego.jpg",
+      "image": "images/logo2.png",
       "membershipLevel": 3
     },
     {
@@ -20,7 +20,7 @@
       "address": "5 Divine Rd, Lekki",
       "phone": "2348055519876",
       "website": "https://franciscosgoods.com",
-      "image": "francisco.jpg",
+      "image": "images/logo3.png",
       "membershipLevel": 2
     },
     {
@@ -28,7 +28,7 @@
         "address": "7 John Rd, Lekki",
         "phone": "2347015576987",
         "website": "https://deborahgoods.com",
-        "image": "francisco.jpg",
+        "image": "images/logo4.png",
         "membershipLevel": 2
       },
       {
@@ -36,7 +36,7 @@
         "address": "8 Chevron Rd, Lekki",
         "phone": "2349025559876",
         "website": "https://tobigoods.com",
-        "image": "francisco.jpg",
+        "image": "images/logo5.jpg",
         "membershipLevel": 1
       },
       {
@@ -44,7 +44,7 @@
         "address": "9 Dele Rd, Lekki",
         "phone": "23470355529876",
         "website": "https://petergoods.com",
-        "image": "francisco.jpg",
+        "image": "images/logo6.jpg",
         "membershipLevel": 1
       },
       {
@@ -52,7 +52,7 @@
         "address": "89 Lake Rd, Lekki",
         "phone": "2348055159876",
         "website": "https://femigoods.com",
-        "image": "francisco.jpg",
+        "image": "images/logo7.png",
         "membershipLevel": 2
       }
       

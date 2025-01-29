@@ -1,59 +1,64 @@
 [
     {
-      "name": "IDWeb",
-      "address": "2115 Vista Avenue Boise ID 83705",
-      "phone": "(208) 342-9936",
-      "website": "https://idweb.com",
-      "image": "idweb.jpg",
-      "membershipLevel": 1
-    },
-    {
-      "name": "Surge Web Design",
-      "address": "4872 E Arrow Creek Meridian ID 83646",
-      "phone": "(208) 555-1234",
-      "website": "https://surgewebdesign.com",
-      "image": "surge.jpg",
+      "name": "Maria's Boutique",
+      "address": "12 Balogun St, Lekki",
+      "phone": "2349025551234",
+      "website": "https://mariasboutique.com",
+      "image": "maria.jpg",
       "membershipLevel": 2
     },
     {
-      "name": "GraphiCizen",
-      "address": "1782 Summerplace Court Meridian ID 83646",
-      "phone": "(208) 555-5678",
-      "website": "https://graphicizen.com",
-      "image": "graphicizen.jpg",
+      "name": "Tola Enterprises",
+      "address": "4 Ade Ave, Lekki",
+      "phone": "2348068555678",
+      "website": "https://tolaenterprises.com",
+      "image": "diego.jpg",
       "membershipLevel": 3
     },
     {
-      "name": "Peppershock Media",
-      "address": "1225 2nd Street Nampa ID 83651",
-      "phone": "(208) 555-9012",
-      "website": "https://peppershock.com",
-      "image": "peppershock.jpg",
-      "membershipLevel": 1
-    },
-    {
-      "name": "Flash Tech Services",
-      "address": "Star Idaho 83669",
-      "phone": "(208) 555-3456",
-      "website": "https://flashtech.com",
-      "image": "flashtech.jpg",
+      "name": "Fortune's Goods",
+      "address": "5 Divine Rd, Lekki",
+      "phone": "2348055519876",
+      "website": "https://franciscosgoods.com",
+      "image": "francisco.jpg",
       "membershipLevel": 2
     },
     {
-      "name": "Motor Works",
-      "address": "1235 E Overland Road Meridian ID 83642",
-      "phone": "(208) 555-7890",
-      "website": "https://motorworks.com",
-      "image": "motorworks.jpg",
-      "membershipLevel": 3
-    },
-    {
-      "name": "Roaring Design",
-      "address": "1897 W Boise Avenue Boise ID 83706",
-      "phone": "(208) 555-4321",
-      "website": "https://roaringdesign.com",
-      "image": "roaring.jpg",
-      "membershipLevel": 1
-    }
+        "name": "Deborah's Goods",
+        "address": "7 John Rd, Lekki",
+        "phone": "2347015576987",
+        "website": "https://deborahgoods.com",
+        "image": "francisco.jpg",
+        "membershipLevel": 2
+      },
+      {
+        "name": "Tobi's Goods",
+        "address": "8 Chevron Rd, Lekki",
+        "phone": "2349025559876",
+        "website": "https://tobigoods.com",
+        "image": "francisco.jpg",
+        "membershipLevel": 1
+      },
+      {
+        "name": "Peter's Goods",
+        "address": "9 Dele Rd, Lekki",
+        "phone": "23470355529876",
+        "website": "https://petergoods.com",
+        "image": "francisco.jpg",
+        "membershipLevel": 1
+      },
+      {
+        "name": "Femi's Goods",
+        "address": "89 Lake Rd, Lekki",
+        "phone": "2348055159876",
+        "website": "https://femigoods.com",
+        "image": "francisco.jpg",
+        "membershipLevel": 2
+      }
+      
+      
+      
+      
+    
   ]
   

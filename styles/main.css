@@ -38,6 +38,16 @@ footer {
   text-align: center;
 }
 
+.grid {
+  display: grid;
+  align-items: center;
+
+}
+
+header, main, footer, .grid {
+  margin: 0 auto;
+  max-width: 840px;
+
 /* Directory Grid */
 .directory-grid {
   display: grid;

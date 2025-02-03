@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             const spotlightSection = document.querySelector(".spotlights");
             spotlightSection.innerHTML = "<h2>Business Spotlights</h2>";
-            
+
             selectedMembers.forEach(member => {
                 const memberHTML = `
                     <div class="spotlight">

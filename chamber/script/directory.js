@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   
         directoryContainer.appendChild(memberCard);
     });
+
   
     // Display current year and last modified date
     const currentYear = new Date().getFullYear();

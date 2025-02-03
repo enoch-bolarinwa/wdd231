@@ -25,6 +25,19 @@ nav ul li a {
     text-decoration: none;
 }
 
+.grid {
+    display: grid;
+    text-align: center;
+    align-items: center;
+  
+  }
+  
+  header, main, footer, .grid, h1, h2, h3 {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 840px;
+  }
+
 .hero {
     position: relative;
     text-align: center;

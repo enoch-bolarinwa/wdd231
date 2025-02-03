@@ -24,31 +24,31 @@ document.addEventListener("DOMContentLoaded", function () {
             weatherWidget.innerHTML = "Weather data unavailable";
         });
     })
-    // Load business spotlights
-    fetch("members.json")
-        .then(response => response.json())
-        .then(members => {
-            const goldSilverMembers = members.filter(member => member.level === "Gold" || member.level === "Silver");
-            const selectedMembers = goldSilverMembers.sort(() => 0.5 - Math.random()).slice(0, 3);
+     // Load business spotlights
+     fetch("members.json")
+     .then(response => response.json())
+     .then(members => {
+         const goldSilverMembers = members.filter(member => member.level === "Gold" || member.level === "Silver");
+         const selectedMembers = goldSilverMembers.sort(() => 0.5 - Math.random()).slice(0, 3);
 
-            const spotlightSection = document.querySelector(".spotlights");
-            spotlightSection.innerHTML = "<h2>Business Spotlights</h2>";
+         const spotlightSection = document.querySelector(".spotlights");
+         spotlightSection.innerHTML = "<h2>Business Spotlights</h2>";
 
-            selectedMembers.forEach(member => {
-                const memberHTML = `
-                    <div class="spotlight">
-                        <img src="${member.logo}" alt="${member.name} Logo">
-                        <h3>${member.name}</h3>
-                        <p>${member.address}</p>
-                        <p>${member.phone}</p>
-                        <a href="${member.website}" target="_blank">Visit Website</a>
-                        <p class="membership">${member.level} Member</p>
-                    </div>
-                `;
-                spotlightSection.innerHTML += memberHTML;
-            });
-        })
-        .catch(error => console.error("Error loading members data:", error));
+         selectedMembers.forEach(member => {
+             const memberHTML = `
+                 <div class="spotlight">
+                     <img src="${member.logo}" alt="${member.name} Logo">
+                     <h3>${member.name}</h3>
+                     <p>${member.address}</p>
+                     <p>${member.phone}</p>
+                     <a href="${member.website}" target="_blank">Visit Website</a>
+                     <p class="membership">${member.level} Member</p>
+                 </div>
+             `;
+             spotlightSection.innerHTML += memberHTML;
+         });
+     })
+     .catch(error => console.error("Error loading members data:", error));
 
  // Initialize the page
  displayDirectory("all");

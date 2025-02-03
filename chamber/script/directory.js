@@ -24,3 +24,5 @@ document.addEventListener("DOMContentLoaded", async () => {
     document.getElementById("lastModified").textContent = document.lastModified;
   });
   
+   // Initialize the page
+   displayDirectory("all");

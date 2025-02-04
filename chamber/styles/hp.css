@@ -32,7 +32,7 @@ nav ul li a {
   
   }
   
-  header, main, footer, .grid, h1, h2, h3 {
+  header, main, body, footer, .grid, h1, h2, h3 {
     margin: 0 auto;
     text-align: center;
     max-width: 840px;
@@ -65,12 +65,14 @@ nav ul li a {
 }
 
 .events, .weather, .spotlights {
-    padding: 20px;
+    padding: 10px;
     text-align: center;
 }
 
+
 .spotlights {
     display: flex;
+    text-align: center;
     flex-wrap: wrap;
     justify-content: space-around;
 }

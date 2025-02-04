@@ -24,28 +24,7 @@
     <h2>Weather Data</h2>
     <div id="weather-widget">Loading weather...</div>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const apiKey = "6ccf135f390e619440faea8be0d967f0"; // Replace with your API key
-            const city = "Lagos"; // Replace with your city
-            const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
-
-            fetch(url)
-                .then(response => response.json())
-                .then(data => {
-                    console.log(data); // Debugging: Log data to console
-                    const weatherWidget = document.getElementById("weather-widget");
-                    weatherWidget.innerHTML = `
-                        <p>Temperature: ${data.main.temp}°C</p>
-                        <p>Weather: ${data.weather[0].description}</p>
-                    `;
-                })
-                .catch(error => {
-                    console.error("Error fetching weather data:", error);
-                    document.getElementById("weather-widget").innerHTML = "Weather data unavailable.";
-                });
-        });
-    </script>
+    
     
     <main>
         <section class="hero">
@@ -66,9 +45,30 @@
         </section>
         
         <section class="weather">
-            <h2>https://home.openweathermap.org/api_keys</h2>
-            <p>Stay updated with the current weather conditions.</p>
-            <div id="weather-widget">Loading weather...</div>
+                <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                        const apiKey = "6ccf135f390e619440faea8be0d967f0"; // Replace with your API key
+                        const city = "Lagos"; // Replace with your city
+                        const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
+            
+                        fetch(url)
+                            .then(response => response.json())
+                            .then(data => {
+                                console.log(data); // Debugging: Log data to console
+                                const weatherWidget = document.getElementById("weather-widget");
+                                weatherWidget.innerHTML = `
+                                    <p>Temperature: ${data.main.temp}°C</p>
+                                    <p>Weather: ${data.weather[0].description}</p>
+                                `;
+                            })
+                            .catch(error => {
+                                console.error("Error fetching weather data:", error);
+                                document.getElementById("weather-widget").innerHTML = "Weather data unavailable.";
+                            });
+                    });
+                </script>
+
+            
         </section>
         
         <section class="spotlights">

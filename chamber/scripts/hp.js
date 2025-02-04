@@ -50,5 +50,12 @@ document.addEventListener("DOMContentLoaded", function () {
      })
      .catch(error => console.error("Error loading members data:", error));
 
+      // Display the current year and last modified date
+  const currentYearElement = document.getElementById("currentyear");
+  const lastModifiedElement = document.getElementById("lastModified");
+  
+  currentYearElement.textContent = new Date().getFullYear();
+  lastModifiedElement.textContent = `Last Update: ${document.lastModified}`;
+
  // Initialize the page
  displayDirectory("all");

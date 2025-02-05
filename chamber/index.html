@@ -2,11 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lekki Chamber of Commerce</title>
-    <link rel="stylesheet" href="styles/hp.css">
-    <script src="scripts/hp.js"></script>
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content=" Chamber of Commerce - Home Page"/>
+  <meta name="author" content="Enoch Bolarinwa">
+  <meta property="og:title" content="Lekki Chamber of Commerce Home Page"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:image" content="https://enoch-bolarinwa.github.io/images/tech.jpg"/>
+  <meta property="og:url" content="https://enoch-bolarinwa.github.io/wdd231/chamber/directory.html"/>
+  <title>Lekki Chamber of Commerce</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles/hp.css">
+  <script src="scripts/hp.js" defer></script>
 </head>
 <body>
     <header>
@@ -85,6 +91,41 @@
                 <h3>Company C</h3>
                 <p>Dedicated to community-driven services.</p>
             </div>
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    fetch("members.json")
+                        .then(response => response.json())  // Parse JSON
+                        .then(members => {
+                            // Filter only Gold & Silver members
+                            const goldSilverMembers = members.filter(member => member.level === "Gold" || member.level === "Silver");
+        
+                            // Randomly select 2 or 3 members
+                            const selectedMembers = goldSilverMembers.sort(() => 0.5 - Math.random()).slice(0, 3);
+        
+                            // Get the container to display spotlights
+                            const spotlightContainer = document.getElementById("spotlight-container");
+                            spotlightContainer.innerHTML = ""; // Clear placeholder text
+        
+                            selectedMembers.forEach(member => {
+                                const memberHTML = `
+                                    <div class="spotlight">
+                                        <img src="${member.logo}" alt="${member.name} Logo" width="100">
+                                        <h3>${member.name}</h3>
+                                        <p><strong>Address:</strong> ${member.address}</p>
+                                        <p><strong>Phone:</strong> ${member.phone}</p>
+                                        <a href="${member.website}" target="_blank">Visit Website</a>
+                                        <p class="membership">${member.level} Member</p>
+                                    </div>
+                                `;
+                                spotlightContainer.innerHTML += memberHTML;
+                            });
+                        })
+                        .catch(error => {
+                            console.error("Error loading members.json:", error);
+                            document.getElementById("spotlight-container").innerHTML = "Failed to load members.";
+                        });
+                });
+            </script>
         </section>
     </main>
     

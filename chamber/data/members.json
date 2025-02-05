@@ -6,7 +6,7 @@
     "phone": "2349025551234",
     "website": "https://mariasboutique.com",
     "image": "images/logo1.png",
-    "membershipLevel": 2
+    "membershipLevel": "gold"
   },
   {
     "name": "Tola Enterprises",
@@ -14,7 +14,7 @@
     "phone": "2348068555678",
     "website": "https://tolaenterprises.com",
     "image": "images/logo2.png",
-    "membershipLevel": 3
+    "membershipLevel": "silver"
   },
   {
     "name": "Fortune's Goods",
@@ -22,7 +22,7 @@
     "phone": "2348055519876",
     "website": "https://franciscosgoods.com",
     "image": "images/logo3.png",
-    "membershipLevel": 2
+    "membershipLevel": "silver"
   },
   {
       "name": "Deborah's Goods",
@@ -30,7 +30,7 @@
       "phone": "2347015576987",
       "website": "https://deborahgoods.com",
       "image": "images/logo4.png",
-      "membershipLevel": 2
+      "membershipLevel": "silver"
     },
     {
       "name": "Tobi's Goods",
@@ -38,7 +38,7 @@
       "phone": "2349025559876",
       "website": "https://tobigoods.com",
       "image": "images/logo5.jpg",
-      "membershipLevel": 1
+      "membershipLevel": "gold"
     },
     {
       "image": "images/logo6.jpg",
@@ -46,7 +46,7 @@
       "address": "9 Dele Rd, Lekki",
       "phone": "23470355529876",
       "website": "https://petergoods.com",
-      "membershipLevel": 1
+      "membershipLevel": "gold"
     },
     {
       "name": "Femi's Goods",
@@ -54,7 +54,7 @@
       "phone": "2348055159876",
       "website": "https://femigoods.com",
       "image": "images/logo7.png",
-      "membershipLevel": 2
+      "membershipLevel": "silver"
     }
 
 ]

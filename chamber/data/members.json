@@ -1,0 +1,60 @@
+
+[
+  {
+    "name": "Maria's Boutique",
+    "address": "12 Balogun St, Lekki",
+    "phone": "2349025551234",
+    "website": "https://mariasboutique.com",
+    "image": "images/logo1.png",
+    "membershipLevel": "gold"
+  },
+  {
+    "name": "Tola Enterprises",
+    "address": "4 Ade Ave, Lekki",
+    "phone": "2348068555678",
+    "website": "https://tolaenterprises.com",
+    "image": "images/logo2.png",
+    "membershipLevel": "silver"
+  },
+  {
+    "name": "Fortune's Goods",
+    "address": "5 Divine Rd, Lekki",
+    "phone": "2348055519876",
+    "website": "https://franciscosgoods.com",
+    "image": "images/logo3.png",
+    "membershipLevel": "silver"
+  },
+  {
+      "name": "Deborah's Goods",
+      "address": "7 John Rd, Lekki",
+      "phone": "2347015576987",
+      "website": "https://deborahgoods.com",
+      "image": "images/logo4.png",
+      "membershipLevel": "silver"
+    },
+    {
+      "name": "Tobi's Goods",
+      "address": "8 Chevron Rd, Lekki",
+      "phone": "2349025559876",
+      "website": "https://tobigoods.com",
+      "image": "images/logo5.jpg",
+      "membershipLevel": "gold"
+    },
+    {
+      "image": "images/logo6.jpg",
+      "name": "Peter's Goods",
+      "address": "9 Dele Rd, Lekki",
+      "phone": "23470355529876",
+      "website": "https://petergoods.com",
+      "membershipLevel": "gold"
+    },
+    {
+      "name": "Femi's Goods",
+      "address": "89 Lake Rd, Lekki",
+      "phone": "2348055159876",
+      "website": "https://femigoods.com",
+      "image": "images/logo7.png",
+      "membershipLevel": "silver"
+    }
+
+]

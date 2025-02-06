@@ -44,9 +44,9 @@
             <h2>Upcoming Events</h2>
             <p>Check out the latest events happening in our community!</p>
             <ul>
-                <li>Business Networking - March 15</li>
-                <li>Community Fair - April 10</li>
-                <li>Annual Gala - May 22</li>
+                <li>Business Networking - March 20</li>
+                <li>Community Fair - April 19</li>
+                <li>Annual Gala - May 29</li>
             </ul>
         </section>
         
@@ -72,27 +72,7 @@
                                 document.getElementById("weather-widget").innerHTML = "Weather data unavailable.";
                             });
                     });
-                </script>
-
-            
-        </section>
-        
-        <section class="spotlights">
-            <h3>Business Spotlights</h3>
-            <div class="spotlight">
-                <h3>Company A</h3>
-                <p>Leading industry solutions provider.</p>
-            </div>
-            <div class="spotlight">
-                <h3>Company B</h3>
-                <p>Innovative approaches for modern businesses.</p>
-            </div>
-            <div class="spotlight">
-                <h3>Company C</h3>
-                <p>Dedicated to community-driven services.</p>
-            </div>
-            <script>
-                document.addEventListener("DOMContentLoaded", function () {
+                    document.addEventListener("DOMContentLoaded", function () {
                     fetch("members.json")
                         .then(response => response.json())  // Parse JSON
                         .then(members => {
@@ -125,7 +105,27 @@
                             document.getElementById("spotlight-container").innerHTML = "Failed to load members.";
                         });
                 });
-            </script>
+                </script>
+
+            
+        </section>
+        
+        <section class="spotlights">
+            <h3>Business Spotlights</h3>
+            
+            <div class="spotlight">
+                <h3>Company A</h3>
+                <p>Leading industry solutions provider.</p>
+            </div>
+            <div class="spotlight">
+                <h3>Company B</h3>
+                <p>Innovative approaches for modern businesses.</p>
+            </div>
+            <div class="spotlight">
+                <h3>Company C</h3>
+                <p>Dedicated to community-driven services.</p>
+            </div>
+        
         </section>
     </main>
     
@@ -137,3 +137,5 @@
       </footer>
 </body>
 </html>
+
+

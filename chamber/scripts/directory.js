@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", async () => {
+    
     const response = await fetch("data/members.json");
     const members = await response.json();
   
@@ -24,6 +25,3 @@ document.addEventListener("DOMContentLoaded", async () => {
     document.getElementById("year").textContent = currentYear;
     document.getElementById("lastModified").textContent = document.lastModified;
   });
-  
-   // Initialize the page
-   displayDirectory("all");

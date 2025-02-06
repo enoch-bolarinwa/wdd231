@@ -31,35 +31,46 @@ document.addEventListener("DOMContentLoaded", function () {
         console.warn("Element #weather-widget not found in HTML.");
     }
 
-    // ✅ Correct members.json fetch path
     fetch("data/members.json")
-        .then(response => response.json())
-        .then(members => {
-            // ✅ Check if spotlight container exists
-            const spotlightSection = document.querySelector(".spotlights");
-            if (!spotlightSection) {
-                console.warn("Element .spotlights not found in HTML.");
-                return;
-            }
+    .then(response => {
+        console.log("Fetching members.json...");
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        return response.json();
+    })
+    .then(members => {
+        console.log("Fetched members data:", members);
+        const spotlightSection = document.querySelector(".spotlights");
+        if (!spotlightSection) {
+            console.warn("Element .spotlights not found in HTML.");
+            return;
+        }
 
-            const goldSilverMembers = members.filter(member => member.level === "Gold" || member.level === "Silver");
-            const selectedMembers = goldSilverMembers.sort(() => 0.5 - Math.random()).slice(0, 3);
+        const goldSilverMembers = members.filter(member => member.level === "Gold" || member.level === "Silver");
+        const selectedMembers = goldSilverMembers.sort(() => 0.5 - Math.random()).slice(0, 3);
 
-            spotlightSection.innerHTML = "<h2>Business Spotlights</h2>";
-            
-            selectedMembers.forEach(member => {
-                const memberHTML = `
-                    <div class="spotlight">
-                        <img src="${member.logo}" alt="${member.name} Logo">
-                        <h3>${member.name}</h3>
-                        <p>${member.address}</p>
-                        <p>${member.phone}</p>
-                        <a href="${member.website}" target="_blank">Visit Website</a>
-                        <p class="membership">${member.level} Member</p>
-                    </div>
-                `;
-                spotlightSection.innerHTML += memberHTML;
-            });
-        })
-        .catch(error => console.error("Error loading members.json:", error));
-});
+        spotlightSection.innerHTML = "<h2>Business Spotlights</h2>";
+        
+        selectedMembers.forEach(member => {
+            const memberHTML = `
+                <div class="spotlight">
+                    <img src="${member.logo}" alt="${member.name} Logo">
+                    <h3>${member.name}</h3>
+                    <p>${member.address}</p>
+                    <p>${member.phone}</p>
+                    <a href="${member.website}" target="_blank">Visit Website</a>
+                    <p class="membership">${member.level} Member</p>
+                </div>
+            `;
+            spotlightSection.innerHTML += memberHTML;
+        });
+    })
+    .catch(error => console.error("Error loading members.json:", error));
+
+
+ // Display current year and last modified date
+ const currentYear = new Date().getFullYear();
+ document.getElementById("year").textContent = currentYear;
+ document.getElementById("lastModified").textContent = document.lastModified;
+})

@@ -73,7 +73,7 @@
                             });
                     });
                     document.addEventListener("DOMContentLoaded", function () {
-                    fetch("members.json")
+                    fetch("data/members.json")
                         .then(response => response.json())  // Parse JSON
                         .then(members => {
                             // Filter only Gold & Silver members
@@ -93,7 +93,7 @@
                                         <h3>${member.name}</h3>
                                         <p><strong>Address:</strong> ${member.address}</p>
                                         <p><strong>Phone:</strong> ${member.phone}</p>
-                                        <a href="${member.website}" target="_blank">Visit Website</a>
+                                        <a href="${data/member.json}" target="_blank">Visit Website</a>
                                         <p class="membership">${member.level} Member</p>
                                     </div>
                                 `;
@@ -101,7 +101,7 @@
                             });
                         })
                         .catch(error => {
-                            console.error("Error loading members.json:", error);
+                            console.error("Error loading data/members.json:", error);
                             document.getElementById("spotlight-container").innerHTML = "Failed to load members.";
                         });
                 });
@@ -112,6 +112,7 @@
         
         <section class="spotlights">
             <h3>Business Spotlights</h3>
+            <div id="spotlight-container">Loading spotlight...</div>
             
             <div class="spotlight">
                 <h3>Company A</h3>

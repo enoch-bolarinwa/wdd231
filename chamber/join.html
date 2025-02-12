@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Join Membership</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <script src="scripts/script.js" defer></script>
+</head>
+<body>
+  <header>
+    <!-- Add your site header content -->
+    <h1>Chamber Membership</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <h2>Membership Application</h2>
+      <form action="thankyou.html" method="get">
+        <!-- First Name -->
+        <label>
+          First Name:
+          <input type="text" name="first_name" title="Enter your first name" autocomplete="given-name" required>
+        </label>
+
+        <!-- Last Name -->
+        <label>
+          Last Name:
+          <input type="text" name="last_name" title="Enter your last name" autocomplete="family-name" required>
+        </label>
+
+        <!-- Organizational Title -->
+        <label>
+          Organizational Title:
+          <input 
+            type="text" 
+            name="org_title" 
+            title="Enter your organizational title (minimum 7 characters, alpha only)" 
+            autocomplete="organization-title" 
+            pattern="[A-Za-z\s\-]{7,}" 
+            required>
+        </label>
+
+        <!-- Email Address -->
+        <label>
+          Email Address:
+          <input 
+            type="email" 
+            name="email" 
+            title="Enter a valid email address" 
+            placeholder="example@domain.com" 
+            autocomplete="email" 
+            required>
+        </label>
+
+        <!-- Mobile Phone -->
+        <label>
+          Mobile Phone:
+          <input 
+            type="tel" 
+            name="mobile" 
+            title="Enter your mobile phone number" 
+            autocomplete="tel" 
+            required>
+        </label>
+
+        <!-- Organization Name -->
+        <label>
+          Business/Organization Name:
+          <input 
+            type="text" 
+            name="organization" 
+            title="Enter your business/organization name" 
+            autocomplete="organization" 
+            required>
+        </label>
+
+        <!-- Membership Level -->
+        <label>
+          Membership Level:
+          <select name="membership_level" required>
+            <option value="NP">NP Membership (Non-Profit)</option>
+            <option value="Bronze">Bronze Membership</option>
+            <option value="Silver">Silver Membership</option>
+            <option value="Gold">Gold Membership</option>
+          </select>
+        </label>
+
+        <!-- Organization Description -->
+        <label>
+          Business/Organization Description:
+          <textarea name="description" title="Enter a description of your business or organization"></textarea>
+        </label>
+
+        <!-- Timestamp -->
+        <input type="hidden" name="timestamp" id="timestamp">
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit Membership">
+      </form>
+    </section>
+
+    <section class="membership-cards">
+      <div class="card">
+        <h3>NP Membership</h3>
+        <button onclick="showModal('npModal')">Learn More</button>
+      </div>
+      <div class="card">
+        <h3>Bronze Membership</h3>
+        <button onclick="showModal('bronzeModal')">Learn More</button>
+      </div>
+      <div class="card">
+        <h3>Silver Membership</h3>
+        <button onclick="showModal('silverModal')">Learn More</button>
+      </div>
+      <div class="card">
+        <h3>Gold Membership</h3>
+        <button onclick="showModal('goldModal')">Learn More</button>
+      </div>
+    </section>
+
+    <!-- Modals -->
+    <dialog id="npModal">
+      <h3>NP Membership Benefits</h3>
+      <p>No fee, access to special events.</p>
+      <button onclick="closeModal('npModal')">Close</button>
+    </dialog>
+    <dialog id="bronzeModal">
+      <h3>Bronze Membership Benefits</h3>
+      <p>Basic advertising, training sessions.</p>
+      <button onclick="closeModal('bronzeModal')">Close</button>
+    </dialog>
+    <dialog id="silverModal">
+      <h3>Silver Membership Benefits</h3>
+      <p>Event discounts, advanced training.</p>
+      <button onclick="closeModal('silverModal')">Close</button>
+    </dialog>
+    <dialog id="goldModal">
+      <h3>Gold Membership Benefits</h3>
+      <p>Spotlight positions, premium events, exclusive benefits.</p>
+      <button onclick="closeModal('goldModal')">Close</button>
+    </dialog>
+  </main>
+
+  <footer>
+    <!-- Add your footer content -->
+    <p>&copy; 2025 Chamber Membership</p>
+  </footer>
+
+  <script>
+    // Set the timestamp
+    document.getElementById('timestamp').value = new Date().toISOString();
+
+    // Functions to handle modals
+    function showModal(id) {
+      document.getElementById(id).showModal();
+    }
+
+    function closeModal(id) {
+      document.getElementById(id).close();
+    }
+  </script>
+</body>
+</html>

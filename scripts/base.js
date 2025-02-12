@@ -115,6 +115,47 @@ const courses = [
   filterButtons.all.addEventListener("click", () => displayCourses("all"));
   filterButtons.cse.addEventListener("click", () => displayCourses("CSE"));
   filterButtons.wdd.addEventListener("click", () => displayCourses("WDD"));
+
+   // Function to create course blocks and attach event listeners
+   function buildCourseList() {
+    const container = document.getElementById("courseContainer");
+
+    courses.forEach(course => {
+        const courseDiv = document.createElement("div");
+        courseDiv.classList.add("course");
+        courseDiv.innerHTML = `<h3>${course.title}</h3>`;
+        courseDiv.addEventListener("click", () => displayModal(course));
+        container.appendChild(courseDiv);
+    });
+}
+
+// Function to display modal with course details
+function displayModal(course) {
+    document.getElementById("modalTitle").innerText = course.title;
+    document.getElementById("modalSubject").innerText = course.subjectNumber;
+    document.getElementById("modalCredits").innerText = course.credits;
+    document.getElementById("modalDescription").innerText = course.description;
+    document.getElementById("modalCertificate").innerText = course.certificate;
+    document.getElementById("modalTech").innerText = course.techStack;
+
+    const modal = document.getElementById("courseDialog");
+    modal.showModal();
+
+    // Event listener to close modal when clicking outside
+    modal.addEventListener("click", (event) => {
+        if (event.target === modal) {
+            closeModal();
+        }
+    });
+}
+
+// Function to close modal
+function closeModal() {
+    document.getElementById("courseDialog").close();
+}
+
+// Build course list on page load
+buildCourseList();
   
   // Display the current year and last modified date
   const currentYearElement = document.getElementById("currentyear");

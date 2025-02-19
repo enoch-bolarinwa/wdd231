@@ -1,0 +1,24 @@
+
+    
+    body {
+      background-color: #f4f4f9; /* Light gray background */
+      color: #333333; /* Dark text */
+      font-family: 'Arial', sans-serif; /* Default font */
+    }
+    h1, h2, h3 {
+      color: #0056b3; /* Blue for headings */
+      font-family: 'Georgia', serif; /* Font for headings */
+    }
+    p, li {
+      font-family: 'Arial', sans-serif; /* Font for body text */
+    }
+    .accent {
+      color: #004080; /* Accent color */
+    }
+    .wireframe {
+      border: 1px dashed #cccccc;
+      padding: 10px;
+      margin: 10px 0;
+      text-align: center;
+    }
+  

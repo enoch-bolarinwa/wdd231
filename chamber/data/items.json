@@ -1,0 +1,51 @@
+[
+    {
+      "title": "Local Park",
+      "address": "123 Park Lane, Cityville",
+      "description": "A beautiful park with walking trails and picnic areas.",
+      "image": "images/local-park.webp"
+    },
+    {
+      "title": "City Museum",
+      "address": "456 Museum St, Cityville",
+      "description": "Discover the history and culture of our region.",
+      "image": "images/city-museum.webp"
+    },
+    {
+      "title": "Art Gallery",
+      "address": "789 Art Ave, Cityville",
+      "description": "Featuring works from local artists and international exhibitions.",
+      "image": "images/art-gallery.webp"
+    },
+    {
+      "title": "Community Center",
+      "address": "101 Community Blvd, Cityville",
+      "description": "A hub for activities and events for all ages.",
+      "image": "images/community-center.webp"
+    },
+    {
+      "title": "Historic Site",
+      "address": "202 Heritage Rd, Cityville",
+      "description": "Explore the rich history of our town.",
+      "image": "images/historic-site.webp"
+    },
+    {
+      "title": "Local Market",
+      "address": "303 Market St, Cityville",
+      "description": "Fresh produce, handmade goods, and more.",
+      "image": "images/local-market.webp"
+    },
+    {
+      "title": "Botanical Garden",
+      "address": "404 Garden Way, Cityville",
+      "description": "A tranquil escape with stunning plant displays.",
+      "image": "images/botanical-garden.webp"
+    },
+    {
+      "title": "Theater",
+      "address": "505 Theater Ln, Cityville",
+      "description": "Catch live performances and movies.",
+      "image": "images/theater.webp"
+    }
+  ]
+  

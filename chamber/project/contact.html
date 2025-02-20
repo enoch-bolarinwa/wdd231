@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Contact Page Of Lakwe Chamber Of Commerce That Contains Details Of Chamber's Executive.">
+    <meta name="author" content="Enoch Bolarinwa">
+  <meta property="og:title" content="Lakwe Chamber of Commerce Contact Page"/>
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://enoch-bolarinwa.github.io/images/tech.jpg"/>
+  <meta property="og:url" content="https://enoch-bolarinwa.github.io/wdd231/chamber/contact.html"/>
+    <title>Contact Executives</title>
+    <link rel="stylesheet" href="styles/pp.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">AboutUs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="explore.html">Explorer</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Data Section -->
+        <section class="data">
+            <h1>Chamber Executives</h1>
+            <img src="images/cyc8.jpg" alt="President" loading="lazy">
+        
+            <ul>
+                <li><strong>Name:</strong> Elimelech Abidemi</li>
+                <li><strong>Position:</strong> President</li>
+                <li><strong>Email:</strong> elimelech.abidemi@example.com</li>
+                <li><strong>Tel:</strong> XXXXXXXXXXXX</li>
+                <li><strong>Country:</strong> Nigeria</li>
+                
+            </ul>
+            
+            <img src="images/cyc9.jpg" alt="Secretary" loading="lazy">
+        
+            <ul>
+                <li><strong>Name:</strong> Ayomikun Adenike</li>
+                <li><strong>Position:</strong>Vice President</li>
+                <li><strong>Email:</strong> ayomikun.adenike@example.com</li>
+                <li><strong>Tel:</strong> XXXXXXXXXXXX</li>
+                <li><strong>Town:</strong> Lakwe </li>
+                
+            </ul>
+
+            <img src="images/cyc10.jpg" alt="Accountant" loading="lazy">
+        
+            <ul>
+                <li><strong>Name:</strong> Abigail Jeremiah</li>
+                <li><strong>Position:</strong>Secretary</li>
+                <li><strong>Email:</strong> abigail.jeremiah@example.com</li>
+                <li><strong>Tel:</strong> XXXXXXXXXXXX</li>
+                <li><strong>Town:</strong>Sangotedo</li>
+                
+            </ul>
+        </section>
+
+    
+        
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Contact us at <a href="mailto:info@lekkichamber.org">info@lakwechamber.org</a></p>
+            <p>&copy; <span id="year"></span> Lakwe Chamber of Commerce</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+          </div>
+      </footer>
+    <script>
+        // Populate current year dynamically
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Populate last modified date dynamically
+        document.getElementById('lastModified').textContent = "Last Updated: " + document.lastModified;
+    </script>
+    <script type="module" src="scripts/contact.js"></script>
+</body>
+</html>

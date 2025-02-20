@@ -1,0 +1,51 @@
+[
+    {
+      "title": "Local Park",
+      "address": "123 Park Lane, Lakwe",
+      "description": "A beautiful park with walking trails and picnic areas.",
+      "image": "images/localpark.jpg"
+    },
+    {
+      "title": "City Museum",
+      "address": "456 Museum St, Lakwe",
+      "description": "Discover the history and culture of our region.",
+      "image": "images/museum.jpg"
+    },
+    {
+      "title": "Art Gallery",
+      "address": "789 Art Ave, Lakwe",
+      "description": "Featuring works from local artists and international exhibitions.",
+      "image": "images/art.jpg"
+    },
+    {
+      "title": "Community Center",
+      "address": "101 Community Blvd, Lakwe",
+      "description": "A hub for activities and events for all ages.",
+      "image": "images/community.jpg"
+    },
+    {
+      "title": "Historic Site",
+      "address": "202 Heritage Rd, Lakwe",
+      "description": "Explore the rich history of our town.",
+      "image": "images/history.jpg"
+    },
+    {
+      "title": "Local Market",
+      "address": "303 Market St, Lakwe",
+      "description": "Fresh produce, handmade goods, and more.",
+      "image": "images/localmarket.jpg"
+    },
+    {
+      "title": "Botanical Garden",
+      "address": "404 Garden Way, Lakwe",
+      "description": "A tranquil escape with stunning plant displays.",
+      "image": "images/botanical.jpg"
+    },
+    {
+      "title": "Theater",
+      "address": "505 Theater Ln, Lakwe",
+      "description": "Catch live performances and movies.",
+      "image": "images/theater.jpg"
+    }
+  ]
+  

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn more about the Lakwe Chamber of Commerce, its mission, vision, and services.">
+    <meta name="author" content="Enoch Bolarinwa">
+    <meta property="og:title" content="Lakwe Chamber of Commerce Home Page"/>
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://enoch-bolarinwa.github.io/images/tech.jpg"/>
+    <meta property="og:url" content="https://enoch-bolarinwa.github.io/wdd231/chamber/index.html"/>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/pp.css">
+    <title>About Us | Lakwe Chamber of Commerce</title>
+</head>
+<body>
+    <header>
+        <div class="logo">LCC</div>
+        <nav class="navigation">
+            <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-hero">
+            <h1>About Lakwe Chamber of Commerce</h1>
+            <p>Promoting growth, innovation, and collaboration for businesses in our region.</p>
+        </section>
+
+        <section class="about-content">
+            <article>
+                <h2>Our Mission</h2>
+                <p>The mission of a Lakwe Chamber of Commerce is generally to support and promote the interests of businesses in the region by providing resources, advocacy, and education. The organization strives to create a prosperous economic environment where businesses, employees, and the community thrive. The chamber facilitates networking, enhances professional development, and fosters a spirit of collaboration among local businesses, entrepreneurs, and government leaders. </p>
+            </article>
+            
+            <article>
+                <h2>Vision Statement</h2>
+        <p>The vision of a Lakwe Chamber of Commerce typically reflects its aspirations for the region’s economic and community future. The chamber aims to be the leading voice for businesses, driving positive change and fostering an inclusive, innovative, and sustainable economy for all stakeholders.</p>
+        <img src="images/cyc4.jpg" alt="Chamber" loading="lazy">
+   
+            </article>
+
+            <article>
+                <h2>What We Offer</h2>
+                <ul>
+                    <li>Business directory to connect with local services.</li>
+                    <li>Networking events and workshops.</li>
+                    <li>Advocacy for local businesses.</li>
+                    <li>Exclusive membership benefits and resources.</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Contact us at <a href="mailto:info@lekkichamber.org">info@lakwechamber.org</a></p>
+            <p>&copy; <span id="year"></span> Lakwe Chamber of Commerce</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+          </div>
+      </footer>
+      <script>
+        // Populate current year dynamically
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Populate last modified date dynamically
+        document.getElementById('lastModified').textContent = "Last Updated: " + document.lastModified;
+    </script>
+
+    <script type="module" src="scripts/mp.js"></script>
+</body>
+</html>

@@ -1,51 +1,51 @@
 [
     {
       "title": "Local Park",
-      "address": "123 Park Lane, Cityville",
+      "address": "123 Park Lane, Lekki",
       "description": "A beautiful park with walking trails and picnic areas.",
-      "image": "images/local-park.webp"
+      "image": "images/localpark.jpg"
     },
     {
       "title": "City Museum",
-      "address": "456 Museum St, Cityville",
+      "address": "456 Museum St, Lekki",
       "description": "Discover the history and culture of our region.",
-      "image": "images/city-museum.webp"
+      "image": "images/museum.jpg"
     },
     {
       "title": "Art Gallery",
-      "address": "789 Art Ave, Cityville",
+      "address": "789 Art Ave, Lekki",
       "description": "Featuring works from local artists and international exhibitions.",
-      "image": "images/art-gallery.webp"
+      "image": "images/art.jpg"
     },
     {
       "title": "Community Center",
-      "address": "101 Community Blvd, Cityville",
+      "address": "101 Community Blvd, Lekki",
       "description": "A hub for activities and events for all ages.",
-      "image": "images/community-center.webp"
+      "image": "images/community.jpg"
     },
     {
       "title": "Historic Site",
-      "address": "202 Heritage Rd, Cityville",
+      "address": "202 Heritage Rd, Lekki",
       "description": "Explore the rich history of our town.",
-      "image": "images/historic-site.webp"
+      "image": "images/history.jpg"
     },
     {
       "title": "Local Market",
-      "address": "303 Market St, Cityville",
+      "address": "303 Market St, Lekki",
       "description": "Fresh produce, handmade goods, and more.",
-      "image": "images/local-market.webp"
+      "image": "images/localmarket.jpg"
     },
     {
       "title": "Botanical Garden",
-      "address": "404 Garden Way, Cityville",
+      "address": "404 Garden Way, Lekki",
       "description": "A tranquil escape with stunning plant displays.",
-      "image": "images/botanical-garden.webp"
+      "image": "images/botanical.jpg"
     },
     {
       "title": "Theater",
-      "address": "505 Theater Ln, Cityville",
+      "address": "505 Theater Ln, Lekki",
       "description": "Catch live performances and movies.",
-      "image": "images/theater.webp"
+      "image": "images/theater.jpg"
     }
   ]
   

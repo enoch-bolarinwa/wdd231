@@ -20,6 +20,11 @@
     document.getElementById("mobile").textContent = queryParams["mobile"] || "[Mobile]";
     document.getElementById("business-name").textContent = queryParams["organization"] || "[Business Name]";
     document.getElementById("timestamp").textContent = queryParams["timestamp"] || "[Date]";
+    
+     // Display current year and last modified date
+ const currentYear = new Date().getFullYear();
+ document.getElementById("year").textContent = currentYear;
+ document.getElementById("lastModified").textContent = document.lastModified;
   }
 
   // Run the function when the page loads
